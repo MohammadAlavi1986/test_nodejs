@@ -18,6 +18,7 @@ app.get('/api/status', function(req, res) {
       if(err) {
         return res.status(500).send('error running query');
       }
+        return res.status(500).send('----------');
 
       return res.json({
         request_uuid: uuid.v4(),
