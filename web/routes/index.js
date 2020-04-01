@@ -17,8 +17,6 @@ router.get('/', function(req, res, next) {
       if (error || response.statusCode !== 200) {
         return res.status(500).send('error running request to ' + api_url);
       } else {
-                return res.status(500).send('error running request to ' + api_url);
-
         res.render('index', {
           title: '3tier App' ,
           request_uuid: body.request_uuid,
