@@ -22,7 +22,7 @@ app.get('/api/status', function(req, res) {
       return res.json({
         request_uuid: uuid.v4(),
         time: result.rows[0].time,
-        version: 1
+        version: 2
       });
     });
   });
